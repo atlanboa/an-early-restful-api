@@ -1,3 +1,4 @@
+drop database anearly;
 create database anearly;
 
 use anearly;
@@ -33,7 +34,7 @@ CREATE TABLE `survey` (
   `user_id` int(11) NOT NULL,
   `title` varchar(200) NOT NULL,
   `hit` int(11) NOT NULL DEFAULT 0,
-  `start_date` date DEFAULT curdate(),
+  `start_date` date DEFAULT '2020-02-20',
   `end_date` date NOT NULL,
   `budget` int(11) NOT NULL DEFAULT 0,
   `content` longtext NOT NULL DEFAULT '',
